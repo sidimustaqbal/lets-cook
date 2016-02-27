@@ -1,0 +1,71 @@
+<?php if ($this->session->flashdata('error')): ?>
+<div class="alert alert-danger">
+	<button data-dismiss="alert" class="close" type="button">
+		<i class="icon-remove"></i>
+	</button>
+	<?php echo $this->session->flashdata('error'); ?>
+</div>
+<?php endif; ?>
+
+<?php if ( ! empty($messages['error'])): ?>
+<div class="alert alert-danger">
+	<button data-dismiss="alert" class="close" type="button">
+		<i class="icon-remove"></i>
+	</button>
+	<?php echo $messages['error']; ?>
+</div>
+<?php endif; ?>
+
+<?php if (validation_errors()): ?>
+<div class="alert alert-danger">
+	<button data-dismiss="alert" class="close" type="button">
+		<i class="icon-remove"></i>
+	</button>
+	<?php echo validation_errors(); ?>
+</div>
+<?php endif; ?>
+
+<?php if ($this->session->flashdata('notice')): ?>
+<div class="alert alert-warning animated fadeIn">
+	<button data-dismiss="alert" class="close" type="button">
+		<i class="icon-remove"></i>
+	</button>
+	<?php echo $this->session->flashdata('notice');?>
+</div>
+<?php endif; ?>
+
+<?php if ( ! empty($messages['notice'])): ?>
+<div class="alert alert-warning animated fadeIn">
+	<button data-dismiss="alert" class="close" type="button">
+		<i class="icon-remove"></i>
+	</button>
+	<?php echo $messages['notice']; ?>
+</div>
+<?php endif; ?>
+
+<?php if ($this->session->flashdata('success')): ?>
+<div class="alert alert-success animated fadeIn">
+	<button data-dismiss="alert" class="close" type="button">
+		<i class="icon-remove"></i>
+	</button>
+	<?php echo $this->session->flashdata('success'); ?>
+</div>
+<?php endif; ?>
+
+<?php if ( ! empty($messages['success'])): ?>
+<div class="alert alert-success animated fadeIn">
+	<button data-dismiss="alert" class="close" type="button">
+		<i class="icon-remove"></i>
+	</button>
+	<?php echo $messages['success']; ?>
+</div>
+<?php endif; ?>
+
+<?php 
+
+	/**
+	 * Admin Notification Event
+	 */
+	Events::trigger('admin_notification');
+	
+?>
