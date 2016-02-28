@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ settings:site_name }}</title>
+	
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	{{ theme:css file="materialize.min.css" }}
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	{{ theme:css file="style.css" }}
+</head>
+
+<body>
+	<div class="navbar-fixed">
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#!" class="brand-logo">{{ settings:site_name }}</a>
+				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+				<ul class="right hide-on-med-and-down">
+					{{ navigation:links group="header" }}
+				</ul>
+				<ul class="side-nav" id="mobile-demo">
+					{{ navigation:links group="header" }}
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<header>
