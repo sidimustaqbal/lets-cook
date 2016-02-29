@@ -1,0 +1,24 @@
+<?php echo lang('logged_in_as'); ?>&nbsp;
+<b><?php echo $this->current_user->display_name; ?></b>
+
+<?php if ($this->current_user->group == 'admin'){ ?>
+|
+<a href="<?php echo site_url('admin'); ?>">
+	<i class="icon-cog"></i>
+	<?php echo lang('admin_panel_label'); ?>
+</a>
+<?php } //if ?>
+
+<?php if(group_has_role('users', 'view_own_profile')){ ?>
+|
+<a href="<?php echo site_url('users/view'); ?>">
+	<i class="icon-user"></i>
+	<?php echo lang_label('Profile'); ?>
+</a>
+<?php } //if ?>
+
+|
+<a href="<?php echo site_url('users/logout'); ?>">
+	<i class="icon-off"></i>
+	<?php echo lang('logout_label'); ?>
+</a>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    {{ theme:partial name='metadata' }}
+
+    <style type="text/css" media="screen">
+      #perorangan, #perusahaan, #tertanggung, .select-first.tertanggung, #btnBack, .alert-warning {
+        display: none;
+      }
+    </style>
+
+        <!--[if lt IE 9]>
+        <?php Asset::js('ie-support/html5shiv.js', false, 'ie_scripts'); ?>
+        <?php Asset::js('ie-support/respond.min.js', false, 'ie_scripts'); ?>
+        <?php echo Asset::render_js('ie_scripts') ?>
+        <![endif]-->
+        <?php Asset::js('jquery-1.11.1.min.js', false, 'head_js'); ?>
+        <?php Asset::js('bootstrap.js', false, 'head_js'); ?>
+        <?php echo Asset::render_js('head_js') ?>
+
+    </head>
+
+
+  <body>
+
+    <div id="site-content">
+      <header class="site-header">
+          {{ theme:partial name="header" }}
+      </header> <!-- .site-header -->
+      <div class="hero hero-slider">
+        <ul class="slides">
+          <li data-bg-image="<?php echo base_url();?>addons/shared_addons/themes/asuransi/dummy/slide-1.jpg">
+            <div class="container">
+              <div class="slide-content">
+                <h2 class="slide-title">Lakukan pendaftaran <strong>Online</strong></h2>
+                <p>Daftar segera sekarang juga, dan anda dapat menikmati berbagai kemudahan pendaftaran dari kami.</p>
+                <a href="<?php echo base_url(); ?>daftar/" class="button">Daftar Online Sekarang</a>
+              </div>
+            </div>
+          </li>
+          <li data-bg-image="<?php echo base_url();?>addons/shared_addons/themes/asuransi/dummy/slide-2.jpg">
+            <div class="container">
+              <div class="slide-content">
+                <h2 class="slide-title">Tentang Asuransi <strong>Sunlife Financial Indonesia</strong></h2>
+                <p>Sejak 1995, PT Sun Life Financial Indonesia (Sun Life) telah menyediakan masyarakat Indonesia dengan program yang lengkap mulai dari produk-produk proteksi dan pengelolaan kekayaan, termasuk asuransi jiwa...</p>
+                <a href="<?php echo base_url(); ?>tentang/" class="button">Lihat Tentang Kami</a>
+              </div>
+            </div>
+          </li>
+          <li data-bg-image="<?php echo base_url();?>addons/shared_addons/themes/asuransi/dummy/slide-3.jpg">
+            <div class="container">
+              <div class="slide-content">
+                <h2 class="slide-title">Lihat asuransi <strong>Sunlife Financial Indonesia</strong></h2>
+                <p>Sesuai dengan misi kami, membantu keluarga Indonesia mencapai kesejahteraan dengan kemapanan finansial , dengan bangga kami memperkenalkan “Life's brighter under the sun”.</p>
+                <a href="<?php echo base_url(); ?>asuransi/" class="button">Lihat Daftar Produk</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div> <!-- .hero-slider -->
+
+      <main class="main-content">
+        <div class="fullwidth-block greet-section">
+          <div class="container">
+            <h2 class="section-title">Selamat datang di website kami.</h2>
+            <small class="section-subtitle">Layanan kami yang dapat anda nikmati diwebsite ini.</small>
+
+            <div class="row">
+              <div class="col-md-3">
+                <div class="feature">
+                  <i class="icon-phone-24"></i>
+                  <h3 class="feature-title">Kontak 24 Jam</h3>
+                  <p>Anda dapat menggunakan kontak 24 jam, yang terdapat pada website ini.</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="feature">
+                  <i class="icon-hotel"></i>
+                  <h3 class="feature-title">Tentang Kami</h3>
+                  <p>Sejak 1995, PT Sun Life Financial Indonesia (Sun Life) telah menyediakan masyarakat Indonesia dengan program yang lengkap.</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="feature">
+                  <i class="icon-luggage"></i>
+                  <h3 class="feature-title">Pilihan Asuransi</h3>
+                  <p>Sesuai dengan misi kami, membantu keluarga Indonesia mencapai kesejahteraan dengan kemapanan finansial.</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="feature">
+                  <i class="icon-credit-card-hand"></i>
+                  <h3 class="feature-title">Daftar Online</h3>
+                  <p>Anda dapat melakukan pendaftaran online dengan mudahnya, tinggal isi formulir yang sudah kami sediakan.</p>
+                </div>
+              </div>
+            </div> <!-- .row -->
+          </div> <!-- .container -->
+        </div> <!-- .fullwidth-block -->
+
+        <div class="fullwidth-block" data-bg-color="#f1f1f1">
+          <div class="container">
+            <h2 class="section-title">Our insurance offer</h2>
+            <small class="section-subtitle">Phasellus vel felis in nulla mollis posuere eget rutrum eros</small>
+
+            <div class="row">
+              <div class="col-md-3">
+                <div class="offer caption-top">
+                  <img src="<?php echo base_url();?>addons/shared_addons/themes/asuransi/dummy/offer-tall.jpg" alt="offer 1">
+                  <div class="caption">
+                    <h3 class="offer-title">Massa augue</h3>
+                    <small>Conubia nostra per inceptos</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="offer caption-bottom">
+                      <img src="<?php echo base_url();?>addons/shared_addons/themes/asuransi/dummy/offer-1.jpg" alt="offer 2">
+                      <div class="caption">
+                        <h3 class="offer-title">Curabitur vehicula</h3>
+                        <small>Conubia nostra per inceptos</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="offer caption-bottom">
+                  <img src="<?php echo base_url();?>addons/shared_addons/themes/asuransi/dummy/offer-wide.jpg" alt="offer 3">
+                  <div class="caption">
+                    <h3 class="offer-title">Vivamus rhoncus porttitor</h3>
+                    <small>Conubia nostra per inceptos</small>
+                  </div>
+                </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="offer caption-bottom">
+                      <img src="<?php echo base_url();?>addons/shared_addons/themes/asuransi/dummy/offer-2.jpg" alt="offer 2">
+                      <div class="caption">
+                        <h3 class="offer-title">Curabitur vehicula</h3>
+                        <small>Conubia nostra per inceptos</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="offer caption-bottom">
+                      <img src="<?php echo base_url();?>addons/shared_addons/themes/asuransi/dummy/offer-3.jpg" alt="offer 2">
+                      <div class="caption">
+                        <h3 class="offer-title">Curabitur vehicula</h3>
+                        <small>Conubia nostra per inceptos</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="offer caption-bottom">
+                      <img src="<?php echo base_url();?>addons/shared_addons/themes/asuransi/dummy/offer-4.jpg" alt="offer 2">
+                      <div class="caption">
+                        <h3 class="offer-title">Curabitur vehicula</h3>
+                        <small>Conubia nostra per inceptos</small>
+                      </div>
+                    </div>
+                  </div>
+                </div> <!-- .row -->
+              </div> <!-- .col-md-8 -->
+            </div> <!-- .row -->
+
+          </div> <!-- .container -->
+        </div> <!-- .offer-section -->
+
+        <div class="fullwidth-block">
+          <div class="container">
+            <h2 class="section-title">Latest news</h2>
+            <div class="row news-list">
+              <div class="col-md-4">
+                <div class="news">
+                  <figure><img src="<?php echo base_url();?>addons/shared_addons/themes/asuransi/dummy/featured-image-1.jpg" alt=""></figure>
+                  <div class="date"><i class="fa fa-calendar"></i> 03/09/2014</div>
+                  <h2 class="entry-title"><a href="#">Donec laoreet non nec aliquam pellentesque interdum</a></h2>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="news">
+                  <figure><img src="<?php echo base_url();?>addons/shared_addons/themes/asuransi/dummy/featured-image-2.jpg" alt=""></figure>
+                  <div class="date"><i class="fa fa-calendar"></i> 03/09/2014</div>
+                  <h2 class="entry-title"><a href="#">Donec laoreet non nec aliquam pellentesque interdum</a></h2>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="news">
+                  <figure><img src="<?php echo base_url();?>addons/shared_addons/themes/asuransi/dummy/featured-image-3.jpg" alt=""></figure>
+                  <div class="date"><i class="fa fa-calendar"></i> 03/09/2014</div>
+                  <h2 class="entry-title"><a href="#">Donec laoreet non nec aliquam pellentesque interdum</a></h2>
+                </div>
+              </div>
+            </div> <!-- .row -->
+          </div> <!-- .container -->
+        </div> <!-- .latest-news-section -->
+      </main>
+      </main>
+
+      <div class="site-footer">
+          {{ theme:partial name="footer" }}
+      </div>
+
+    <?php Asset::js('plugins.js', false, 'js_footer'); ?>
+    <?php Asset::js('app.js', false, 'js_footer'); ?>
+    <?php Asset::js('icheck.min.js', false, 'js_footer'); ?>
+    <?php echo Asset::render_js('js_footer') ?>
+  </body>
+
+</html>

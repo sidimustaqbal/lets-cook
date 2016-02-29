@@ -17,12 +17,15 @@ class Admin extends Admin_Controller
 	 */
 	public function __construct()
 	{
-	    parent::__construct();
-	
-	    $this->load->model('permission_m');
-	    $this->load->model('groups/group_m');
-	    $this->lang->load('permissions');
-	    $this->lang->load('groups/group');
+    parent::__construct();
+
+    $this->load->model('permission_m');
+    $this->load->model('groups/group_m');
+    $this->load->model('settings/settings_m');
+		$this->load->library('settings');
+    $this->lang->load('permissions');
+    $this->lang->load('groups/group');
+		$this->lang->load('settings/settings');
 	}
 
 	/**
@@ -46,6 +49,15 @@ class Admin extends Admin_Controller
 	 */
 	public function group($group_id)
 	{
+		// Get the group data
+		$group = $this->group_m->get($group_id);
+		// If the group data could not be retrieved
+		if ( ! $group) {
+			// Set a message to notify the user.
+			$this->session->set_flashdata('error', lang('permissions:message_no_group_id_provided'));
+			// Send him to the main index to select a proper group.
+			redirect('admin/permissions');
+		}
 
 		$this->load->library('form_validation');
 
@@ -60,21 +72,12 @@ class Admin extends Admin_Controller
 				// Fire an event. Permissions have been saved.
 				Events::trigger('permissions_saved', array($group_id, $modules, $roles));
 			}
-			
+
 			$this->session->set_flashdata('success', lang('permissions:message_group_saved_success'));
 
-			$this->input->post('btnAction') === 'save_exit' 
+			$this->input->post('btnAction') === 'save_exit'
 				? redirect('admin/permissions')
 				: redirect('admin/permissions/group/'.$group_id);
-		}
-		// Get the group data
-		$group = $this->group_m->get($group_id);
-		// If the group data could not be retrieved
-		if ( ! $group) {
-			// Set a message to notify the user.
-			$this->session->set_flashdata('error', lang('permissions:message_no_group_id_provided'));
-			// Send him to the main index to select a proper group.
-			redirect('admin/permissions');
 		}
 
 		// See if this is the admin group
@@ -83,6 +86,53 @@ class Admin extends Admin_Controller
 		$edit_permissions = ($group_is_admin) ? array() : $this->permission_m->get_group($group_id);
 		// Get all the possible permission rules from the installed modules
 		$permission_modules = $this->module_m->get_all(array('is_backend' => true, 'installed' => true));
+
+		$settings = $this->settings_m->get_all_setting(array('is_gui' => 1));
+		$setting_language = array();
+		$setting_sections = array();
+
+
+		foreach ($settings as $key => $setting)
+		{
+			$setting->form_control = $this->settings->form_control($setting);
+
+			if (empty($setting->module))
+			{
+				$setting->module = 'general';
+			}
+
+			$setting_language[$setting->module] = array();
+
+			// Get Section name from native translation, third party translation or only use module name
+			if ( ! isset($setting_sections[$setting->module]))
+			{
+				$section_name = lang('settings:section_'.$setting->module);
+
+				if ($this->module_m->exists($setting->module))
+				{
+					list($path, $_langfile) = Modules::find('settings_lang', $setting->module, 'language/'.config_item('language').'/');
+
+					if ($path !== false)
+					{
+						$setting_language[$setting->module] = $this->lang->load($setting->module.'/settings', '', true);
+
+						if (empty($section_name) && isset($setting_language[$setting->module]['settings:section_'.$setting->module]))
+						{
+							$section_name = $setting_language[$setting->module]['settings:section_'.$setting->module];
+						}
+					}
+				}
+
+				if (empty($section_name))
+				{
+					$section_name = ucfirst(strtr($setting->module, '_', ' '));
+				}
+
+				$setting_sections[$setting->module] = $section_name;
+
+			}
+
+		}
 
 		foreach ($permission_modules as &$permission_module)
 		{
@@ -94,6 +144,8 @@ class Admin extends Admin_Controller
 			->set('edit_permissions', $edit_permissions)
 			->set('group_is_admin', $group_is_admin)
 			->set('permission_modules', $permission_modules)
+			->set('settings', $settings)
+			->set('setting_sections', $setting_sections)
 			->set('group', $group)
 			->build('admin/group');
 	}

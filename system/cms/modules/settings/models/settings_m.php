@@ -57,8 +57,33 @@ class Settings_m extends MY_Model {
 			->select('*, IF(`value` = "", `default`, `value`) as `value`', false)
 			->where($where)
 			->order_by('`order`', 'DESC');
-		
-		return $this->get_all();
+
+		return $this->get_all('default_');
+	}
+
+	/**
+	 * Get All Setting
+	 *
+	 * Gets all settings based on the $where param.  $where can be either a string
+	 * containing a module name or an array of WHERE options.
+	 *
+	 * @access	public
+	 * @param	mixed	$where
+	 * @return	object
+	 */
+	public function get_all_setting($where = array())
+	{
+		if ( ! is_array($where))
+		{
+			$where = array('module' => $where);
+		}
+
+		$this->db
+			->select('*, IF(`value` = "", `default`, `value`) as `value`', false)
+			->where($where)
+			->order_by('`module` asc, `order` desc');
+
+		return $this->get_all('default_');
 	}
 
 	/**

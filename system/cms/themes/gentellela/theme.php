@@ -22,18 +22,6 @@ class Theme_Gentellela extends Theme {
 																'options'       => '2 column=Two Column|full-width=Full Width|full-width-home=Full Width Home Page',
 																'is_required'   => true),
 								   );
-	/**
-	 * Run() is triggered when the theme is loaded for use
-	 *
-	 * This should contain the main logic for the theme.
-	 *
-	 * @access	public
-	 * @return	void
-	 */
-	public function run()
-	{
-		
-	}
 }
 
 /* End of file theme.php */

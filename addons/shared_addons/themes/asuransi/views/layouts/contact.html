@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        {{ theme:partial name='metadata' }}
+
+    </head>
+
+    <body>
+        {{ if theme:options:style == 'boxed' }}
+              <div class="main-box">          
+        {{endif}}
+        {{ if theme:options:style == 'full' }}
+            <!--   HEADER  --> 
+            {{ theme:partial name="header" }}
+            <!--   /HEADER  -->         
+        {{endif}}
+
+        <!--  MAIN SECTION -->
+        <section id="wrap">
+            
+            {{ if theme:options:style == 'boxed' }}
+                <!--   HEADER  --> 
+                {{ theme:partial name="header" }}
+                <!--   /HEADER  -->         
+            {{endif}}
+            
+            <div id="main-container" class="container {{ if theme:options:style == 'boxed' }}box-pad{{endif}}">
+                <!-- slider -->
+                {{ if { url:segments segment="1" } == '' OR  { url:segments segment="1" } == 'home' }}
+                        {{ widgets:area slug="slider" }}
+                {{ endif }}
+                <!-- /slider -->
+                
+                    <div class="row vmargin">
+						<div class="col-xs-7">
+							{{ theme:partial name="breadcrumbs" }}
+						</div>
+						
+						<div class="col-xs-5">
+							<span class="pull-right">
+								
+								{{ if user:logged_in }}
+								
+								{{ theme:partial name="usermenu" }}
+								
+								{{ endif }}
+								
+							</span>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-xs-12">
+						{{ session:messages success="alert alert-success" notice="alert" error="alert alert-error" }}
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-xs-6 pull-left">
+							<h4 class="h-bg-1"><span>Feedback form</span></h4>
+							{{ template:body }}
+						</div>
+						
+						<div class="col-xs-6 pull-left">
+							{{ widgets:area slug="contact-sidebar" }}
+						</div>
+					</div>
+
+
+                
+            </div>
+        </section> 
+        <!-- / MAIN SECTION -->
+        
+        {{ theme:partial name="footer" }}
+        
+        {{ if theme:options:style == 'boxed' }}
+        </div>          
+        {{endif}}
+    </body>
+</html>

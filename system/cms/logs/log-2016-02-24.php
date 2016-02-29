@@ -1,121 +1,115 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
-ERROR - 2016-02-24 03:27:56 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 03:27:56 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 03:28:02 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 03:28:02 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 03:28:02 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 03:28:11 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 03:28:39 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 03:28:52 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 05:21:25 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 05:21:34 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 05:24:50 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 05:24:54 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 05:25:54 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 05:25:59 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 05:26:26 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 05:29:29 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 05:29:29 --> Severity: Warning  --> call_user_func() expects parameter 1 to be a valid callback, class 'Theme_Gentellela' does not have a method 'run' C:\xampp\htdocs\pyro\system\cms\core\Admin_Controller.php 164
-ERROR - 2016-02-24 05:29:52 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 05:30:09 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 05:30:19 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 05:31:42 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 05:31:42 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_analytics_graph C:\xampp\htdocs\pyro\system\cms\themes\gentellela\theme.php 39
-ERROR - 2016-02-24 05:31:42 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_news_feed C:\xampp\htdocs\pyro\system\cms\themes\gentellela\theme.php 40
-ERROR - 2016-02-24 05:31:42 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_recent_comments C:\xampp\htdocs\pyro\system\cms\themes\gentellela\theme.php 41
-ERROR - 2016-02-24 05:32:49 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 05:33:50 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 05:33:50 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_analytics_graph C:\xampp\htdocs\pyro\system\cms\themes\gentellela\theme.php 66
-ERROR - 2016-02-24 05:33:50 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_news_feed C:\xampp\htdocs\pyro\system\cms\themes\gentellela\theme.php 67
-ERROR - 2016-02-24 05:33:50 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_recent_comments C:\xampp\htdocs\pyro\system\cms\themes\gentellela\theme.php 68
-ERROR - 2016-02-24 05:33:52 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 05:33:52 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_analytics_graph C:\xampp\htdocs\pyro\system\cms\themes\gentellela\theme.php 66
-ERROR - 2016-02-24 05:33:52 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_news_feed C:\xampp\htdocs\pyro\system\cms\themes\gentellela\theme.php 67
-ERROR - 2016-02-24 05:33:52 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_recent_comments C:\xampp\htdocs\pyro\system\cms\themes\gentellela\theme.php 68
-ERROR - 2016-02-24 05:33:53 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 05:33:53 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_analytics_graph C:\xampp\htdocs\pyro\system\cms\themes\gentellela\theme.php 66
-ERROR - 2016-02-24 05:33:53 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_news_feed C:\xampp\htdocs\pyro\system\cms\themes\gentellela\theme.php 67
-ERROR - 2016-02-24 05:33:53 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_recent_comments C:\xampp\htdocs\pyro\system\cms\themes\gentellela\theme.php 68
-ERROR - 2016-02-24 05:37:04 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 05:37:04 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_analytics_graph C:\xampp\htdocs\pyro\system\cms\themes\gentellela\theme.php 66
-ERROR - 2016-02-24 05:37:04 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_news_feed C:\xampp\htdocs\pyro\system\cms\themes\gentellela\theme.php 67
-ERROR - 2016-02-24 05:37:04 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_recent_comments C:\xampp\htdocs\pyro\system\cms\themes\gentellela\theme.php 68
-ERROR - 2016-02-24 05:37:05 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 05:37:05 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_analytics_graph C:\xampp\htdocs\pyro\system\cms\themes\gentellela\theme.php 66
-ERROR - 2016-02-24 05:37:05 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_news_feed C:\xampp\htdocs\pyro\system\cms\themes\gentellela\theme.php 67
-ERROR - 2016-02-24 05:37:05 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_recent_comments C:\xampp\htdocs\pyro\system\cms\themes\gentellela\theme.php 68
-ERROR - 2016-02-24 05:37:06 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 05:37:06 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_analytics_graph C:\xampp\htdocs\pyro\system\cms\themes\gentellela\theme.php 66
-ERROR - 2016-02-24 05:37:06 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_news_feed C:\xampp\htdocs\pyro\system\cms\themes\gentellela\theme.php 67
-ERROR - 2016-02-24 05:37:06 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_recent_comments C:\xampp\htdocs\pyro\system\cms\themes\gentellela\theme.php 68
-ERROR - 2016-02-24 05:37:07 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 05:37:08 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_analytics_graph C:\xampp\htdocs\pyro\system\cms\themes\gentellela\theme.php 66
-ERROR - 2016-02-24 05:37:08 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_news_feed C:\xampp\htdocs\pyro\system\cms\themes\gentellela\theme.php 67
-ERROR - 2016-02-24 05:37:08 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_recent_comments C:\xampp\htdocs\pyro\system\cms\themes\gentellela\theme.php 68
-ERROR - 2016-02-24 05:37:38 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 05:39:26 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 05:40:23 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 05:40:23 --> Severity: Warning  --> call_user_func() expects parameter 1 to be a valid callback, class 'Theme_Gentellela' does not have a method 'run' C:\xampp\htdocs\pyro\system\cms\core\Admin_Controller.php 164
-ERROR - 2016-02-24 05:41:07 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 08:53:02 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 08:53:57 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 08:53:59 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 08:54:00 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 08:57:06 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 08:57:25 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 08:57:25 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_quick_links C:\xampp\htdocs\pyro\system\cms\themes\materialize\views\admin\dashboard.php 8
-ERROR - 2016-02-24 08:58:05 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 08:58:05 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_quick_links C:\xampp\htdocs\pyro\system\cms\themes\materialize\views\admin\dashboard.php 8
-ERROR - 2016-02-24 08:59:28 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 08:59:28 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_quick_links C:\xampp\htdocs\pyro\system\cms\themes\materialize\views\admin\dashboard.php 8
-ERROR - 2016-02-24 08:59:32 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 08:59:32 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_quick_links C:\xampp\htdocs\pyro\system\cms\themes\materialize\views\admin\dashboard.php 8
-ERROR - 2016-02-24 09:04:11 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 09:04:11 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_quick_links C:\xampp\htdocs\pyro\system\cms\themes\materialize\views\admin\dashboard.php 8
-ERROR - 2016-02-24 09:04:23 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 09:04:23 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_quick_links C:\xampp\htdocs\pyro\system\cms\themes\materialize\views\admin\dashboard.php 8
-ERROR - 2016-02-24 09:09:09 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 09:09:09 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_quick_links C:\xampp\htdocs\pyro\system\cms\themes\materialize\views\admin\dashboard.php 8
-ERROR - 2016-02-24 09:09:14 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 09:09:14 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_quick_links C:\xampp\htdocs\pyro\system\cms\themes\materialize\views\admin\dashboard.php 8
-ERROR - 2016-02-24 09:10:01 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 09:10:01 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_quick_links C:\xampp\htdocs\pyro\system\cms\themes\materialize\views\admin\dashboard.php 8
-ERROR - 2016-02-24 09:11:08 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 09:11:08 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_quick_links C:\xampp\htdocs\pyro\system\cms\themes\materialize\views\admin\dashboard.php 8
-ERROR - 2016-02-24 09:15:53 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 09:15:53 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_quick_links C:\xampp\htdocs\pyro\system\cms\themes\materialize\views\admin\dashboard.php 8
-ERROR - 2016-02-24 09:16:03 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 09:16:03 --> Severity: Notice  --> Undefined property: stdClass::$pyrocms_quick_links C:\xampp\htdocs\pyro\system\cms\themes\materialize\views\admin\dashboard.php 8
-ERROR - 2016-02-24 09:18:06 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 09:20:09 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 09:20:09 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 09:21:05 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 09:24:52 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 09:34:22 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 09:34:32 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 09:37:22 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 09:43:30 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 09:59:26 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 10:05:07 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 10:06:06 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 10:07:19 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 10:10:03 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 10:10:46 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 10:15:48 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 10:15:58 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 10:32:10 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 10:32:17 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 10:33:23 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 10:33:41 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 10:36:00 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 10:41:44 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 10:44:47 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 10:44:52 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 10:45:10 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 10:45:29 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 10:45:43 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 10:46:06 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 10:47:01 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 10:47:11 --> Language file contains no data: language/english/navigation_lang.php
-ERROR - 2016-02-24 10:48:49 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 00:36:47 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 00:38:50 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 00:40:21 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 00:41:30 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 00:41:43 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 00:41:53 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 00:42:25 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 00:42:52 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 00:58:00 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 00:58:01 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 00:58:01 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 00:58:02 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 00:58:03 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 00:58:08 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 00:58:08 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 00:58:20 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:00:59 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:01:24 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:01:51 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:07:05 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:08:43 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:12:35 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:17:52 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:26:18 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:27:54 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:29:04 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:29:06 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:29:07 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:29:07 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:29:08 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:29:09 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:31:05 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:33:45 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:34:53 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:42:04 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:42:41 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:42:49 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:43:19 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:43:44 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:44:12 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:44:47 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:45:33 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:46:01 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:46:01 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:46:23 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:46:33 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:46:48 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:47:10 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:47:58 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 01:48:34 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:04:41 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:16:47 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:17:20 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:17:31 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:20:28 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:21:32 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:21:34 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:21:37 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:22:06 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:22:15 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:22:45 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:23:12 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:23:42 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:23:52 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:23:53 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:24:04 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:24:11 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:24:17 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:24:19 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:24:38 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:24:40 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:24:42 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:25:01 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:26:21 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:26:21 --> Severity: Notice  --> Undefined index: pihak_ketiga D:\localhost\Sidejob\pyro\addons\default\modules\daftar\views\admin\data_entry.php 629
+ERROR - 2016-02-24 18:27:12 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:28:46 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:28:46 --> Severity: Notice  --> Undefined index: lahit D:\localhost\Sidejob\pyro\addons\default\modules\daftar\views\admin\data_entry.php 639
+ERROR - 2016-02-24 18:29:02 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:29:58 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:32:13 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:33:13 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:34:06 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:34:22 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:36:12 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:37:17 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:44:57 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:45:03 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:45:03 --> Severity: Notice  --> Undefined index: jenis D:\localhost\Sidejob\pyro\addons\default\modules\daftar\views\admin\data_entry.php 414
+ERROR - 2016-02-24 18:45:03 --> Severity: Notice  --> Undefined index: botol D:\localhost\Sidejob\pyro\addons\default\modules\daftar\views\admin\data_entry.php 417
+ERROR - 2016-02-24 18:45:03 --> Severity: Notice  --> Undefined index: batang D:\localhost\Sidejob\pyro\addons\default\modules\daftar\views\admin\data_entry.php 420
+ERROR - 2016-02-24 18:46:07 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:46:07 --> Severity: Notice  --> Array to string conversion D:\localhost\Sidejob\pyro\addons\default\modules\daftar\views\admin\data_entry.php 411
+ERROR - 2016-02-24 18:46:07 --> Severity: Notice  --> Undefined index: jenis D:\localhost\Sidejob\pyro\addons\default\modules\daftar\views\admin\data_entry.php 415
+ERROR - 2016-02-24 18:46:07 --> Severity: Notice  --> Undefined index: botol D:\localhost\Sidejob\pyro\addons\default\modules\daftar\views\admin\data_entry.php 418
+ERROR - 2016-02-24 18:46:07 --> Severity: Notice  --> Undefined index: batang D:\localhost\Sidejob\pyro\addons\default\modules\daftar\views\admin\data_entry.php 421
+ERROR - 2016-02-24 18:46:30 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:46:30 --> Severity: Notice  --> Undefined index: jenis D:\localhost\Sidejob\pyro\addons\default\modules\daftar\views\admin\data_entry.php 415
+ERROR - 2016-02-24 18:46:30 --> Severity: Notice  --> Undefined index: botol D:\localhost\Sidejob\pyro\addons\default\modules\daftar\views\admin\data_entry.php 418
+ERROR - 2016-02-24 18:46:30 --> Severity: Notice  --> Undefined index: batang D:\localhost\Sidejob\pyro\addons\default\modules\daftar\views\admin\data_entry.php 421
+ERROR - 2016-02-24 18:46:48 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:46:48 --> Severity: Notice  --> Undefined index: tidak D:\localhost\Sidejob\pyro\addons\default\modules\daftar\views\admin\data_entry.php 429
+ERROR - 2016-02-24 18:47:10 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 18:47:29 --> Language file contains no data: language/english/navigation_lang.php
+ERROR - 2016-02-24 19:56:05 --> Language file contains no data: language/indonesian/navigation_lang.php
+ERROR - 2016-02-24 19:58:08 --> Language file contains no data: language/indonesian/navigation_lang.php
+ERROR - 2016-02-24 19:58:13 --> Language file contains no data: language/indonesian/navigation_lang.php
+ERROR - 2016-02-24 23:51:38 --> Language file contains no data: language/indonesian/navigation_lang.php
+ERROR - 2016-02-24 23:51:38 --> Severity: Notice  --> Undefined index: tanggung D:\localhost\Sidejob\pyro\addons\default\modules\daftar\views\admin\data_index.php 67
+ERROR - 2016-02-24 23:52:24 --> Language file contains no data: language/indonesian/navigation_lang.php
+ERROR - 2016-02-24 23:53:09 --> Language file contains no data: language/indonesian/navigation_lang.php
+ERROR - 2016-02-24 23:54:01 --> Language file contains no data: language/indonesian/navigation_lang.php
+ERROR - 2016-02-24 23:54:04 --> Language file contains no data: language/indonesian/navigation_lang.php
