@@ -39,7 +39,7 @@
 	</div>
 	</header>
 	<div class="container">
-		<div class="row receipt-list">
+		<div class="row recipes-list">
 			{{ if posts }}
 					{{ posts }}
 					<div class="col s12 l4">

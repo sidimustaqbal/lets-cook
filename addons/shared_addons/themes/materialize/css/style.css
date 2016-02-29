@@ -4,6 +4,9 @@ body {
 .brand-logo {
 	margin: 0px 20px;
 }
+nav {
+    background-color: #FFB347;
+}
 header {
 	background: url(../img/header.png);
 	background-size: cover;
@@ -36,8 +39,10 @@ header .intro-text .name{
 	width: 100%;
 	height: 100%;
 }
-.post-list .card-content{
-	padding: 5px 20px 0px 5px;
+@media (min-width: 768px) {
+	.post-list .card-content{
+		padding: 5px 20px 0px 5px;
+	}
 }
 .post-title {
 	font-size: 24px;
@@ -47,4 +52,21 @@ header .intro-text .name{
 }
 .post-title a{
 	color: inherit;
+}
+.recipes-list .card .card-image {
+	height: 220px;
+}
+.recipes-list .card .card-image img {
+	max-height: 100%;
+	max-width:100%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+footer.page-footer .footer-copyright {
+    background-color: rgba(255,255,255,0.2);
+}
+footer.page-footer {
+    background-color: #FFB347;
 }
