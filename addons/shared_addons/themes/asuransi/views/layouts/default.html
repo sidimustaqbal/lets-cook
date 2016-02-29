@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    {{ theme:partial name='metadata' }}
+
+    <style type="text/css" media="screen">
+      #perorangan, #perusahaan, #tertanggung, #pertanggungan, #kesehatan, .select-first.tertanggung, #btnBack, .alert-warning, #tambahan {
+        display: none;
+      }
+    </style>
+
+        <!--[if lt IE 9]>
+        <?php Asset::js('ie-support/html5shiv.js', false, 'ie_scripts'); ?>
+        <?php Asset::js('ie-support/respond.min.js', false, 'ie_scripts'); ?>
+        <?php echo Asset::render_js('ie_scripts') ?>
+        <![endif]-->
+        <?php Asset::js('jquery-1.11.1.min.js', false, 'head_js'); ?>
+        <?php echo Asset::render_js('head_js') ?>
+
+    </head>
+
+
+  <body>
+
+    <div id="site-content">
+      <header class="site-header">
+          {{ theme:partial name="header" }}
+      </header> <!-- .site-header -->
+
+      <main class="main-content">
+        <div class="page">
+          <div class="container" id="top_page">
+            <div class="row">
+              {{ template:body }}
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div class="site-footer">
+          {{ theme:partial name="footer" }}
+      </div>
+
+    <?php Asset::js('plugins.js', false, 'js_footer'); ?>
+    <?php Asset::js('app.js', false, 'js_footer'); ?>
+    <?php Asset::js('icheck.min.js', false, 'js_footer'); ?>
+    <?php echo Asset::render_js('js_footer') ?>
+  </body>
+
+</html>

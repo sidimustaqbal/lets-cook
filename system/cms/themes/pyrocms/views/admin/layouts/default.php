@@ -20,6 +20,7 @@
 
 	<!-- CSS. No need to specify the media attribute unless specifically targeting a media type, leaving blank implies media=all -->
 	<?php echo Asset::css('plugins.css'); ?>
+	<?php echo Asset::css('font-awesome.css'); ?>
 	<?php echo Asset::css('workless/workless.css'); ?>
 	<?php echo Asset::css('workless/application.css'); ?>
 	<?php echo Asset::css('workless/responsive.css'); ?>
@@ -49,7 +50,7 @@
 	<div id="container">
 
 		<section id="content">
-			
+
 			<header class="hide-on-ckeditor-maximize">
 			<?php file_partial('header'); ?>
 			</header>

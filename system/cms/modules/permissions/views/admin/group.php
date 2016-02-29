@@ -1,3 +1,23 @@
+<style type="text/css">
+	div.head_role {
+    width: 100%;
+		margin-top: 10px;
+    clear: both;
+    border: 2px solid rgba(0,0,0,0.3);
+    float: left;
+    padding: 5px 0px;
+  }
+	div.head_role:first-child {
+		margin-top: 0px;
+  }
+  div.head_titles {
+    font-weight: bolder;
+		padding: 5px 7px;
+		margin: 0px 5px 5px;
+    background-color: rgba(0,0,0,0.3);
+  }
+	label.inline {float: left; margin-right: 5px; margin-left: 5px;}
+</style>
 <section class="title">
 	<h4><?php echo $group->description ?></h4>
 </section>
@@ -31,7 +51,7 @@
 						</label>
 					</td>
 					<td>
-					<?php if ( ! empty($module['roles'])): ?>
+					<?php if ( ! empty($module['roles'])){ ?>
 						<?php foreach ($module['roles'] as $role): ?>
 						<label class="inline">
 							<?php echo form_checkbox(array(
@@ -43,7 +63,31 @@
 							<?php echo lang($module['slug'].':role_'.$role) ?>
 						</label>
 						<?php endforeach ?>
-					<?php endif ?>
+					<?php }else if($module['slug']=='settings'){ ?>
+						<?php
+						$set_var = 'random';
+						echo '<div class="head_role"><div>';
+						foreach ($settings as $setting) {
+							if($set_var != $setting->module){
+								if($set_var!='random'){
+									echo '</div></div><div class="head_role"><div>';
+								}
+								$set_var = $setting->module;
+								echo '<div class="head_titles">'.$setting_sections[$setting->module].'</div>';
+							}
+						?>
+						<label class="inline">
+							<?php echo form_checkbox(array(
+								'class' => 'select-rule',
+								'name' => 'module_roles[settings]['.$setting->slug.']',
+								'value' => true,
+								'checked' => isset($edit_permissions['settings']) AND array_key_exists($setting->slug, (array) $edit_permissions['settings'])
+							)) ?>
+							<?php echo $setting->title; ?>
+						</label>
+						<?php }
+						echo '</div></div>';?>
+					<?php } ?>
 					</td>
 				</tr>
 				<?php endforeach ?>

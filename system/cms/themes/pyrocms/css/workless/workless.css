@@ -2,7 +2,7 @@
  * /*
  * PyroCMS LLC
  * Developed by @joshuapekera, @philsturgeon, @jerelunruh, @adamfairholm
- * 
+ *
  */
 
 /**
@@ -101,8 +101,8 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-/** 
- * Correct overflow not hidden in IE9 
+/**
+ * Correct overflow not hidden in IE9
 */
 
 svg:not(:root) {
@@ -246,8 +246,8 @@ small {
 }
 
 /**
- * Position subscript and superscript 
- * content without affecting line-height. 
+ * Position subscript and superscript
+ * content without affecting line-height.
  */
 
 sub,
@@ -266,8 +266,8 @@ sub {
   bottom: -0.25em;
 }
 
-/** 
- * Give paragraphs some default styling. 
+/**
+ * Give paragraphs some default styling.
  */
 
 p {
@@ -282,8 +282,8 @@ p small {
   color: #666;
 }
 
-/** 
- * Give headings some default styling. 
+/**
+ * Give headings some default styling.
 */
 
 h1,
@@ -306,8 +306,8 @@ h6 small {
   color: #666;
 }
 
-/** 
- * Set individual heading styles 
+/**
+ * Set individual heading styles
 */
 
 h1 {
@@ -433,8 +433,8 @@ dd {
   margin: 0 0 0 20px;
 }
 
-/** 
- * We probably don't want list-styles if it's in a navigation. 
+/**
+ * We probably don't want list-styles if it's in a navigation.
  */
 
 nav ul,
@@ -898,13 +898,13 @@ table .actions a {
 .btn,
 .btn a,
 a.btn {
-  color: #fff;
+  color: #333;
 }
 
 .btn:hover,
 .btn a:hover,
 a.btn:hover {
-  color: #fff;
+  color: #000;
   -webkit-transition: 0ms linear all !important;
      -moz-transition: 0ms linear all !important;
        -o-transition: 0ms linear all !important;
@@ -2068,7 +2068,7 @@ li.pill {
     -moz-opacity: .5;
          opacity: .5;
   filter: alpha(opacity=50);
-  overflow: hidden;  
+  overflow: hidden;
 }
 
 .topbar ul li ul {
@@ -2498,9 +2498,9 @@ span.cke_skin_kama {
 @media print {
   {
     /* Black prints faster */
-  
+
     /* Don't show links for images, or javascript/internal links */
-  
+
   }
   * {
     color: #000!important;
@@ -2549,4 +2549,13 @@ span.cke_skin_kama {
   h3 {
     page-break-after: avoid;
   }
+}
+.row {
+  width: 100%;
+  float: left;
+  clear: both;
+  padding: 15px 5px 0px;
+}
+.row:last-of-type {
+  padding-bottom: 15px;
 }

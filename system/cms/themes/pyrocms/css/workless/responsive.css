@@ -360,9 +360,9 @@ button#login-submit:hover {
 @media only screen and (min-width: 481px) {
   {
     /* section.title, section.item {width: 450px;} */
-  
+
     /* LOGIN SCREEN */
-  
+
   }
   .wrapper {
     width: 480px;
@@ -438,7 +438,7 @@ button#login-submit:hover {
   }
   .form_inputs label small {
     /* margin-left:0; */
-  
+
     margin-bottom: 0;
   }
   .form_inputs fieldset {
@@ -487,11 +487,11 @@ button#login-submit:hover {
 @media only screen and (max-width: 767px) {
   {
     /* display alert button as block on mobile */
-  
+
     /* Fix navigation for mobile devices */
-  
+
     /*Table fixes for mobile */
-  
+
   }
   .topbar nav {
     position: relative;
@@ -548,7 +548,7 @@ button#login-submit:hover {
   }
   .topbar-form {
     /* position: relative; */
-  
+
   }
   .one_half {
     display: block;
@@ -591,13 +591,13 @@ button#login-submit:hover {
 @media only screen and (min-width: 768px) {
   {
     /* section.title, section.item {width: 720px;} */
-  
+
     /*
   footer {
   		margin-top:-64px;
   	}
   */
-  
+
   }
   nav#primary {
     display: inherit;
@@ -662,7 +662,7 @@ button#login-submit:hover {
   }
   .one_half {
     float: left;
-    width: 48%;
+    width: 49%;
     margin-right: 15px;
   }
   td.one_half {
@@ -746,13 +746,13 @@ button#login-submit:hover {
 @media only screen and (min-width: 1025px) {
   {
     /* section.title, section.item {width: 994px;} */
-  
+
     /*
   footer {
   		margin-top:-64px;
   	}
   */
-  
+
   }
   .wrapper {
     width: 1024px;
@@ -794,7 +794,7 @@ button#login-submit:hover {
   }
   .one_half {
     float: left;
-    width: 48%;
+    width: 49%;
     margin-right: 10px;
   }
   td.one_half {
@@ -877,7 +877,7 @@ button#login-submit:hover {
   }
   .one_half {
     float: left;
-    width: 48%;
+    width: 49%;
     margin-right: 10px;
   }
   td.one_half {
@@ -912,7 +912,7 @@ button#login-submit:hover {
   }
 }
 
-/* !Animated 
+/* !Animated
 ------------------------------------------------------------------ */
 
 #login-logo {
@@ -1005,7 +1005,7 @@ button#login-submit:hover {
           animation-iteration-count: 1;
 }
 
-/* !Retina Displays 
+/* !Retina Displays
 ------------------------------------------------------------------ */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 21), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {

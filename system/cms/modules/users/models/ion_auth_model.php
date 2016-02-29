@@ -76,14 +76,16 @@ class Ion_auth_model extends CI_Model
 		$this->columns = $this->config->item('columns', 'ion_auth');
 
 		$this->identity_column = $this->config->item('identity', 'ion_auth');
-	    $this->store_salt      = $this->config->item('store_salt', 'ion_auth');
-	    $this->salt_length     = $this->config->item('salt_length', 'ion_auth');
-	    $this->meta_join       = $this->config->item('join', 'ion_auth');
+    $this->store_salt      = $this->config->item('store_salt', 'ion_auth');
+    $this->salt_length     = $this->config->item('salt_length', 'ion_auth');
+    $this->meta_join       = $this->config->item('join', 'ion_auth');
 
 		$this->load->driver('Streams');
 
-		$this->user_stream 			= $this->streams_m->get_stream('profiles', true, 'users');
-		$this->user_stream_fields 	= $this->streams_m->get_stream_fields($this->user_stream->id);
+		$this->user_stream				= $this->streams_m->get_stream('profiles', true, 'users');
+		if($this->user_stream){
+			$this->user_stream_fields	= $this->streams_m->get_stream_fields($this->user_stream->id);
+		}
 	}
 
 	// --------------------------------------------------------------------------
@@ -514,8 +516,8 @@ class Ion_auth_model extends CI_Model
 			}
 		}
 
-		// If the group id does not exist, get it via the 
-		// group name. 
+		// If the group id does not exist, get it via the
+		// group name.
 		if ( ! $group_id)
 		{
 			// Group ID
@@ -636,9 +638,9 @@ class Ion_auth_model extends CI_Model
 
 		return false;
 	}
-	
+
 	// --------------------------------------------------------------------------
-	
+
 	public function force_login($user_id, $remember = false)
 	{
 		if (empty($user_id))
@@ -669,7 +671,7 @@ class Ion_auth_model extends CI_Model
 	}
 
 	// --------------------------------------------------------------------------
-	
+
 	public function _set_login($user, $remember)
 	{
 		$this->update_last_login($user->id);
@@ -715,7 +717,7 @@ class Ion_auth_model extends CI_Model
 				// Is this an alt. process field type? If so, we don't
 				// want to select the column since it doesn't exist.
 				if (
-					! isset($this->type->types->{$field_data->field_type}->alt_process) or 
+					! isset($this->type->types->{$field_data->field_type}->alt_process) or
 					! $this->type->types->{$field_data->field_type}->alt_process
 				)
 				{
@@ -724,12 +726,12 @@ class Ion_auth_model extends CI_Model
 			}
 		}
 
-		// Profile columns that are not under streams control, but we 
+		// Profile columns that are not under streams control, but we
 		// want to have access to anyways.
 		$this->db->select($this->tables['meta'].'.display_name as display_name');
 		$this->db->select($this->tables['meta'].'.updated_on as updated_on');
 		$this->db->select($this->tables['meta'].'.user_id as user_id');
-		
+
 		// Just in case this is different than the user_id, it's good
 		// to have this on hand.
 		$this->db->select($this->tables['meta'].'.id as profile_id');
@@ -1075,7 +1077,7 @@ class Ion_auth_model extends CI_Model
 	    if ( ! $stream) die('boo');
 
 		$stream_fields = $this->streams_m->get_stream_fields($stream->id);
-	
+
 	    $profile_parsed_data = $this->row_m->run_field_pre_processes($stream_fields, $stream, $profile->id, $profile_data);
 
 	    // Special provision for our non-stream controlled fields

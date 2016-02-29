@@ -1,6 +1,6 @@
 	<div class="row">
 		<div class="col s12">
-			<img class="circle responsive-img header-img" src="img/menu.jpg">
+			{{ theme:image file='menu.jpg' class="circle responsive-img header-img"}}
 			<div class="intro-text">
 			<span class="name white-text lighten-5">Recipes</span>
 			</div>
@@ -49,27 +49,7 @@
 			</div>
 			<div class="col s12 l4">
 				<div class="col s12 widget">
-					<div class="card-panel recent-post">
-						<span class="post-title">Recent Recipes</span>
-						<ul class="collection">
-							{{ if posts }}
-								{{ posts }}
-							<li class="collection-item avatar">
-								<img src="img/menu.jpg" alt="" class="circle">
-								<span class="title truncate"><a href="{{ url }}">{{ title }}</a></span>
-								<p class="blue-grey-text lighten-5">{{ helper:date timestamp=created_on }}</p>
-							</li>
-								{{ /posts }}
-							{{ endif }}
-						</ul>
-						<hr />
-						<span class="post-title">Categories</span>
-						<ul class="collection">
-							<li class="collection-item"><a href="blog.html#">Category 1</a></li>
-							<li class="collection-item"><a href="blog.html#">Category 2</a></li>
-							<li class="collection-item"><a href="blog.html#">Category 3</a></li>
-						</ul>
-					</div>
+					{{ widgets:area slug="sidebar"}}
 				</div>				
 			</div>
 		</div>

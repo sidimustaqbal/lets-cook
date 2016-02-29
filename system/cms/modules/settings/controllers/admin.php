@@ -10,14 +10,14 @@ class Admin extends Admin_Controller {
 
 	/**
 	 * Validation array
-	 * 
+	 *
 	 * @var array
 	 */
 	private $validation_rules = array();
 
 	/**
 	 * Constructor method
-	 * 
+	 *
 	 * @return void
 	 */
 	public function __construct()
@@ -46,67 +46,72 @@ class Admin extends Admin_Controller {
 		// Loop through each setting
 		foreach ($settings as $key => $setting)
 		{
-			$setting->form_control = $this->settings->form_control($setting);
 
-			if (empty($setting->module))
-			{
-				$setting->module = 'general';
-			}
+			if(group_has_role('settings', $setting->slug)){
 
-			$setting_language[$setting->module] = array();
+				$setting->form_control = $this->settings->form_control($setting);
 
-			// Get Section name from native translation, third party translation or only use module name
-			if ( ! isset($setting_sections[$setting->module]))
-			{
-				$section_name = lang('settings:section_'.$setting->module);
-
-				if ($this->module_m->exists($setting->module))
+				if (empty($setting->module))
 				{
-					list($path, $_langfile) = Modules::find('settings_lang', $setting->module, 'language/'.config_item('language').'/');
+					$setting->module = 'general';
+				}
 
-					if ($path !== false)
+				$setting_language[$setting->module] = array();
+
+				// Get Section name from native translation, third party translation or only use module name
+				if ( ! isset($setting_sections[$setting->module]))
+				{
+					$section_name = lang('settings:section_'.$setting->module);
+
+					if ($this->module_m->exists($setting->module))
 					{
-						$setting_language[$setting->module] = $this->lang->load($setting->module.'/settings', '', true);
+						list($path, $_langfile) = Modules::find('settings_lang', $setting->module, 'language/'.config_item('language').'/');
 
-						if (empty($section_name) && isset($setting_language[$setting->module]['settings:section_'.$setting->module]))
+						if ($path !== false)
 						{
-							$section_name = $setting_language[$setting->module]['settings:section_'.$setting->module];
+							$setting_language[$setting->module] = $this->lang->load($setting->module.'/settings', '', true);
+
+							if (empty($section_name) && isset($setting_language[$setting->module]['settings:section_'.$setting->module]))
+							{
+								$section_name = $setting_language[$setting->module]['settings:section_'.$setting->module];
+							}
 						}
 					}
-				}
 
-				if (empty($section_name))
-				{
-					$section_name = ucfirst(strtr($setting->module, '_', ' '));
-				}
-
-				$setting_sections[$setting->module] = $section_name;
-			}
-
-			// Get Setting title and description translations as Section name
-			foreach (array(
-				'title' => 'settings:'.$setting->slug,
-				'description' => 'settings:'.$setting->slug.'_desc'
-			) as $key => $name)
-			{
-				${$key} = lang($name);
-
-				if (empty(${$key}))
-				{
-					if (isset($setting_language[$setting->module][$name]))
+					if (empty($section_name))
 					{
-						${$key} = $setting_language[$setting->module][$name];
+						$section_name = ucfirst(strtr($setting->module, '_', ' '));
 					}
-					else
-					{
-						${$key} = $setting->{$key};
-					}
+
+					$setting_sections[$setting->module] = $section_name;
 				}
 
-				$setting->{$key} = ${$key};
-			}
+				// Get Setting title and description translations as Section name
+				foreach (array(
+					'title' => 'settings:'.$setting->slug,
+					'description' => 'settings:'.$setting->slug.'_desc'
+				) as $key => $name)
+				{
+					${$key} = lang($name);
 
-			$settings[$setting->module][] = $setting;
+					if (empty(${$key}))
+					{
+						if (isset($setting_language[$setting->module][$name]))
+						{
+							${$key} = $setting_language[$setting->module][$name];
+						}
+						else
+						{
+							${$key} = $setting->{$key};
+						}
+					}
+
+					$setting->{$key} = ${$key};
+				}
+
+				$settings[$setting->module][] = $setting;
+
+			}
 
 			unset($settings[$key]);
 		}
@@ -129,7 +134,7 @@ class Admin extends Admin_Controller {
 			$this->session->set_flashdata('notice', lang('global:demo_restrictions'));
 			redirect('admin/settings');
 		}
-		
+
 		$settings = $this->settings_m->get_many_by(array('is_gui'=>1));
 
 		// Create dynamic validation rules
@@ -149,7 +154,7 @@ class Admin extends Admin_Controller {
 		if ($this->form_validation->run())
 		{
 			$settings_stored = array();
-			
+
 			// Loop through again now we know it worked
 			foreach ($settings as $setting)
 			{
@@ -175,8 +180,8 @@ class Admin extends Admin_Controller {
 					$settings_stored[$setting->slug] = $new_value;
 				}
 			}
-			
-			// Fire an event. Yay! We know when settings are updated. 
+
+			// Fire an event. Yay! We know when settings are updated.
 			Events::trigger('settings_updated', $settings_stored);
 
 			// Success...

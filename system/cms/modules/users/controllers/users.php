@@ -98,7 +98,7 @@ class Users extends Public_Controller
 	public function login()
 	{
 		// Check post and session for the redirect place
-		$redirect_to = ($this->input->post('redirect_to')) 
+		$redirect_to = ($this->input->post('redirect_to'))
 			? trim(urldecode($this->input->post('redirect_to')))
 			: $this->session->userdata('redirect_to');
 
@@ -316,7 +316,7 @@ class Users extends Public_Controller
 				// --------------------------------
 				// Auto-Username
 				// --------------------------------
-				// There are no guarantees that we 
+				// There are no guarantees that we
 				// will have a first/last name to
 				// work with, so if we don't, use
 				// an alternate method.
@@ -773,7 +773,7 @@ class Users extends Public_Controller
 			// Grab user data
 			// --------------------------------
 			// Currently just the email.
-			// --------------------------------		
+			// --------------------------------
 
 			if (isset($_POST['email']))
 			{
@@ -785,15 +785,17 @@ class Users extends Public_Controller
 		// Grab user profile data
 		// --------------------------------
 
-		foreach ($assignments as $assign)
-		{
-			if (isset($_POST[$assign->field_slug]))
+		if(is_array($assignments)){
+			foreach ($assignments as $assign)
 			{
-				$profile_data[$assign->field_slug] = $this->input->post($assign->field_slug);
-			}
-			else
-			{
-				$profile_data[$assign->field_slug] = $profile_row->{$assign->field_slug};
+				if (isset($_POST[$assign->field_slug]))
+				{
+					$profile_data[$assign->field_slug] = $this->input->post($assign->field_slug);
+				}
+				else
+				{
+					$profile_data[$assign->field_slug] = $profile_row->{$assign->field_slug};
+				}
 			}
 		}
 
