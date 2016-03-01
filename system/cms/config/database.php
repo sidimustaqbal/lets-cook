@@ -34,9 +34,9 @@
 // Development
 $db[PYRO_DEVELOPMENT] = array(
 	'hostname'		=> 	'localhost',
-	'username'		=> 	'root',
-	'password'		=> 	'',
-	'database'		=> 	'zhan_pyroc',
+	'username'		=> 	'developer',
+	'password'		=> 	'terserah',
+	'database'		=> 	'pyroci',
 	'dbdriver' 		=> 	'mysqli',
 	'dbprefix' 		=>	'default_',
 	'pconnect' 		=>	FALSE,
