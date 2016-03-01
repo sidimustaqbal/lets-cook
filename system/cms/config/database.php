@@ -36,7 +36,6 @@ $db[PYRO_DEVELOPMENT] = array(
 	'hostname'		=> 	'localhost',
 	'username'		=> 	'developer',
 	'password'		=> 	'terserah',
-	'database'		=> 	'pyroci',
 	'dbdriver' 		=> 	'mysqli',
 	'dbprefix' 		=>	'default_',
 	'pconnect' 		=>	FALSE,

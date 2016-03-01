@@ -53,6 +53,9 @@ header .intro-text .name{
 .post-title a{
 	color: inherit;
 }
+.post-img img {
+	max-width: 100%;
+}
 .recipes-list .card .card-image {
 	height: 220px;
 }
