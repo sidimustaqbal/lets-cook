@@ -1,34 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Let's Cook</title>
+	{{ theme:partial name="header" }}
 	
-	<!--Import Google Icon Font-->
-	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<!--Import materialize.css-->
-	{{ theme:css file="materialize.min.css" }}
-
-	<!--Let browser know website is optimized for mobile-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	{{ theme:css file="style.css" }}
-</head>
-
-<body>
-	<div class="navbar-fixed">
-		<nav>
-			<div class="nav-wrapper">
-				<a href="#!" class="brand-logo">{{ settings:site_name }}</a>
-				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-				<ul class="right hide-on-med-and-down">
-					{{ navigation:links group="header" }}
-				</ul>
-				<ul class="side-nav" id="mobile-demo">
-					{{ navigation:links group="header" }}
-				</ul>
-			</div>
-		</nav>
-	</div>
-	<header>
 	<div class="row">
 		<div class="col s12">
 			{{ theme:image file="lets-cook2.jpg" class="circle responsive-img header-img" }}
@@ -70,37 +41,4 @@
 		</div>
 	</div>
 
-	<footer class="page-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col l6 s12">
-					<h5 class="white-text">Lorem ipsum dolor sit amett</h5>
-					<p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				</div>
-				<div class="col l3 offset-l3 s12">
-					<h5 class="white-text">Category</h5>
-					<ul>
-						<li><a class="grey-text text-lighten-3" href="#!">Category 1</a></li>
-						<li><a class="grey-text text-lighten-3" href="#!">Category 2</a></li>
-						<li><a class="grey-text text-lighten-3" href="#!">Category 3</a></li>
-						<li><a class="grey-text text-lighten-3" href="#!">Category 4</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="footer-copyright">
-			<div class="container">
-				&copy;2016 Copyright Text
-			</div>
-		</div>
-	</footer>
-	<!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    {{ theme:js file="materialize.min.js" }}
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$(".button-collapse").sideNav();
-		});
-	</script>
-</body>
-</html>
+	{{ theme:partial name="footer" }}

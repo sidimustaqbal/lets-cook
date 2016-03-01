@@ -57,33 +57,7 @@
 			</div>
 			<div class="col s12 l4">
 				<div class="col s12 widget">
-					<div class="card-panel recent-post">
-						<span class="post-title">Recent Recipes</span>
-						<ul class="collection">
-							<li class="collection-item avatar">
-								<img src="img/menu.jpg" alt="" class="circle">
-								<span class="title truncate"><a href="post.html#">Lorem ipsum dolor sit amet</a></span>
-								<p class="blue-grey-text lighten-5">Mar 26, 2016</p>
-							</li>
-							<li class="collection-item avatar">
-								<img src="img/menu.jpg" alt="" class="circle">
-								<span class="title truncate"><a href="post.html#">Lorem ipsum dolor sit amet</a></span>
-								<p class="blue-grey-text lighten-5">Mar 26, 2016</p>
-							</li>
-							<li class="collection-item avatar">
-								<img src="img/menu.jpg" alt="" class="circle">
-								<span class="title truncate"><a href="post.html#">Lorem ipsum dolor sit amet</a></span>
-								<p class="blue-grey-text lighten-5">Mar 26, 2016</p>
-							</li>
-						</ul>
-						<hr />
-						<span class="post-title">Categories</span>
-						<ul class="collection">
-							<li class="collection-item"><a href="blog.html#">Category 1</a></li>
-							<li class="collection-item"><a href="blog.html#">Category 2</a></li>
-							<li class="collection-item"><a href="blog.html#">Category 3</a></li>
-						</ul>
-					</div>
+					{{ widgets:area slug="sidebar"}}
 				</div>				
 			</div>
 		</div>

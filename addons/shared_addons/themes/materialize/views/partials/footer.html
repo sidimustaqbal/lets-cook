@@ -7,12 +7,14 @@
 				</div>
 				<div class="col l3 offset-l3 s12">
 					<h5 class="white-text">Category</h5>
-					<ul>
-						<li><a class="grey-text text-lighten-3" href="#!">Category 1</a></li>
-						<li><a class="grey-text text-lighten-3" href="#!">Category 2</a></li>
-						<li><a class="grey-text text-lighten-3" href="#!">Category 3</a></li>
-						<li><a class="grey-text text-lighten-3" href="#!">Category 4</a></li>
+					<?php if (is_array($categories)): ?>
+					<ul class="">
+						<?php foreach ($categories as $category): ?>
+						<li class=""><?php echo anchor("blog/category/{$category->slug}", $category->title, array('class'=>'grey-text text-lighten-3')) ?></li>
+						<?php endforeach ?>
 					</ul>
+					<?php endif ?>
+
 				</div>
 			</div>
 		</div>
@@ -23,7 +25,7 @@
 		</div>
 	</footer>
 	<!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    {{ theme:js file="jquery-1.11.2.min.js" }}
     <script src="js/materialize.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {

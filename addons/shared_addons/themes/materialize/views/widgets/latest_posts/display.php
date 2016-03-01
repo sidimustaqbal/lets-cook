@@ -1,3 +1,4 @@
+<?php dump($posts); ?>
 {{ if posts }}
 <ul class="collection">
 	{{ posts }}
